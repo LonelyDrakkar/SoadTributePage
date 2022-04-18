@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System of a Down | Tribute Page</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/assets/images/logos/soad.webp" type="image/x-icon">
+        <script src="/js/navbar.js"></script>
+        <title>System of a Down | Tribute Page</title>
+    </head>
     <body>
+        <div id="top"></div>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#about-soad">About Soad</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#members">Members</a></li>
-                    <li><a href="#discography">Discography</a></li>
-                    <li><a href="#links">Links</a></li>
-                </ul>
+            <nav id="nav-bar">
+                <a href="#top"><img id="soad-logo" src="/assets/images/logos/soad.webp" alt="System of a Down icon" title="System of a Down"></a>
+                <div id="links-container">
+                    <ul id="nav-list">
+                        <li><a href="#about-soad" class="nav-link">About Soad</a></li>
+                        <li><a href="#history" class="nav-link">History</a></li>
+                        <li><a href="#members" class="nav-link">Members</a></li>
+                        <li><a href="#discography" class="nav-link">Discography</a></li>
+                        <li><a href="#links" class="nav-link">Links</a></li>
+                    </ul>
+                </div>
+                <label for="check" id="label"></label>
+                <input type="checkbox" id="check">
             </nav>
         </header>
         <main id="main">
