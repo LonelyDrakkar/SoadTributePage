@@ -5,8 +5,12 @@ html {
 }
 
 body {
-    background-color: #212124;    
-    font-family: "staatliches", monospace;
+    background-image: url('/assets/images/logos/concert.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Fjalla One", monospace;
+    color: #FFF;
 }
 
 #top {
@@ -34,6 +38,7 @@ body {
 .nav-link {
     text-decoration: none;
     color: #FFF;
+    font-family: "Staatliches", monospace;
     transition: 0.3s all ease;
 }
 
@@ -62,7 +67,7 @@ body {
 }
 
 img {
-    width: 50%;
+    width: 100%;
 }
 
 #check {
@@ -133,5 +138,62 @@ img {
 
     .toggle #down {
         transform: rotate(-45deg) translate( 0.1em,-0.6em);
+    }
+}
+
+/* About soad */
+
+#title, #subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    font-family: "Staatliches", monospace;
+    font-size: 50px;
+}
+
+#about {
+    display: grid;
+    grid-template-areas: 
+        "image sidetext"
+        "image sidetext"
+    ;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: #242421;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+#img-div {
+    margin-top: 2em;
+    grid-area: image;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#side-text {
+    grid-area: sidetext;
+    padding: 2em;
+}
+
+@media (max-width: 800px){
+    #about {
+        grid-template-areas: 
+            "image image"
+            "sidetext sidetext"
+        ;
+    }
+}
+
+@media (max-width: 400px){
+    #title {
+        font-size: xx-large;
     }
 }
