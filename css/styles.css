@@ -98,32 +98,13 @@ img {
         flex-direction: column;
         justify-content: space-around;
    }
-/*
-   #label::after {
-        content: "";
-        position: absolute;
-        top: -0.5em;
-        background-color: #FFF;
-        border-radius: 10px;
-        height: 3px;
-        width: 25px;
-   }
 
-   #label::before {
-        content: "";
-        position: absolute;
-        bottom: -0.5em;
-        background-color: #FFF;
-        border-radius: 10px;
-        height: 3px;
-        width: 25px;
-    }
-*/
     #up {
         height: 3px;
         background-color: #FFF;
         border-radius: 10px;
         width: 25px;
+        transition: 0.3s all ease;
     }
 
     #middle {
@@ -131,6 +112,7 @@ img {
         background-color: #FFF;
         border-radius: 10px;
         width: 25px; 
+        transition: 0.3s all ease;
     }
 
     #down {
@@ -138,5 +120,18 @@ img {
         background-color: #FFF;
         border-radius: 10px;
         width: 25px;
+        transition: 0.3s all ease;
+    }
+
+    .toggle #middle{
+        opacity: 0;
+    }
+
+    .toggle #up {
+        transform: rotate(45deg) translate( 0.1em,0.6em);
+    }
+
+    .toggle #down {
+        transform: rotate(-45deg) translate( 0.1em,-0.6em);
     }
 }
