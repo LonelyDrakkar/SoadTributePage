@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
 body {
     background-image: url('/assets/images/logos/concert.webp');
     background-repeat: no-repeat;
@@ -11,6 +15,25 @@ body {
     background-size: cover;
     font-family: "Fjalla One", monospace;
     color: #FFF;
+}
+
+body::-webkit-scrollbar {
+	width: 0.5em;
+	background: #242421;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #111111;
+	border-radius: 50px;
+	transition: all 0.5s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: rgb(150, 150, 150);
+}	
+
+body::-webkit-scrollbar-thumb:active {
+	background-color: rgb(175, 0, 0);
 }
 
 #top {
@@ -153,6 +176,10 @@ img {
     font-size: 50px;
 }
 
+.box-title {
+    font-family: "Staatliches", monospace;
+} 
+
 #about {
     display: grid;
     grid-template-areas: 
@@ -196,4 +223,24 @@ img {
     #title {
         font-size: xx-large;
     }
+}
+
+
+/* History */
+
+#history {
+    margin: 2em auto;
+    padding: 0.5em 1em;
+}
+
+#history-list {
+    list-style-type: none;
+}
+
+#history-list li {
+    background-color: #242421;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin-top: 1em;
+    box-shadow: 0 0 10px 0 #000;
 }
