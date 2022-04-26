@@ -400,3 +400,8 @@ img {
     transform: translateY(0px);
     opacity: 1;
 }
+
+.reveal.active:hover {
+    transition: 0.3s all ease;
+    transform: scale(1.1);
+}
