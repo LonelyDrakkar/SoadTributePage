@@ -388,3 +388,15 @@ img {
         row-gap: 50px;
     }
 }
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
