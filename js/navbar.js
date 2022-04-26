@@ -26,6 +26,7 @@ window.onload = () => {
             newNav.style.cssText += 'right: -100vw';
             checker.classList.toggle('toggle');
             checkbox.checked = false;
+            html.classList.toggle('no-scroll');
         }
     });
 
