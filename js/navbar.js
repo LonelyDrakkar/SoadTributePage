@@ -31,7 +31,7 @@ window.onload = () => {
 
     window.onscroll = () => {
         let currentScrollPos = window.scrollY;
-        console.log(currentScrollPos)
+
         if(prevScrollPos < currentScrollPos){
             navBar.style.cssText += 'top: -4em';
         }else{
