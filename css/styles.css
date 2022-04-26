@@ -17,6 +17,10 @@ body {
     color: #FFF;
 }
 
+.no-scroll body {
+    overflow: hidden;
+}
+
 body::-webkit-scrollbar {
 	width: 0.5em;
 	background: #242421;
@@ -56,6 +60,8 @@ body::-webkit-scrollbar-thumb:active {
     height: 3.5em;
     background-color: #242421;
     box-shadow: 0 1px 10px 0 #000;
+    transition: 0.3s all ease;
+    z-index: 1;
 }
 
 .nav-link {
@@ -174,6 +180,7 @@ img {
 #title {
     font-family: "Staatliches", monospace;
     font-size: 50px;
+    text-shadow: 1px 1px 10px #000;
 }
 
 .box-title {
@@ -243,4 +250,51 @@ img {
     border-radius: 10px;
     margin-top: 1em;
     box-shadow: 0 0 10px 0 #000;
+}
+
+/* Members */
+
+#members {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    column-gap: 5%;
+}
+
+.member-img {
+    transition: 0.3s all ease;
+    background-color: #242421;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    border: 3px solid #242421;
+}
+
+.member-img:hover {
+    transform: scale(1.1);
+}
+
+.member-img img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.member-img figcaption {
+    padding: 0.2em;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    #members-container {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        justify-items: center;
+    }
 }
