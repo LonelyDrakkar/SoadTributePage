@@ -259,6 +259,7 @@ img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 4em;
 }
 
 #members-container {
@@ -294,6 +295,32 @@ img {
     #members-container {
         grid-template-columns: repeat(2, 40vw);
         grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        justify-items: center;
+    }
+}
+
+/* Discography */
+
+#discography {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4em;
+}
+
+#disks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    gap: 5%;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    #disks-container {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(3, auto);
         gap: 10px;
         justify-items: center;
     }
