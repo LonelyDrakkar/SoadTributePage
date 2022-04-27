@@ -401,7 +401,7 @@ img {
     opacity: 1;
 }
 
-.reveal.active:hover {
+.reveal.active.member-img:hover {
     transition: 0.3s all ease;
     transform: scale(1.1);
 }
