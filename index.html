@@ -17,10 +17,13 @@
         <script src="js/navbar.js"></script>
         <title>System of a Down | Tribute Page</title>
     </head>
-    <body>
+    <body class="hidden">
+        <div class="centered" id="onload">
+            <div class="lds-dual-ring"></div>
+        </div>
         <div id="top"></div>
         <header>
-            <nav id="nav-bar">
+            <nav id="nav-bar" class="invisible">
                 <a href="#top"><img id="soad-logo" src="assets/images/logos/soad.webp" alt="System of a Down icon" title="System of a Down"></a>
                 <div id="links-container">
                     <ul id="nav-list">
@@ -203,5 +206,6 @@
                 </footer>
             </article>
         </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </body>
 </html>

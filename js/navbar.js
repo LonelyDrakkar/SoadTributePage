@@ -55,4 +55,8 @@ window.onload = () => {
             }
         }
     });
+
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+    $('nav').removeClass('invisible');
 }
